@@ -1,0 +1,13 @@
+overwrite: true
+schema: "http://localhost:3000/graphql"
+documents: "src/**/*.{ts,tsx}"
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-document-nodes"
+      - "urql-introspection"
+      - "typescript-urql"
+config:
+  gqlImport: "@urql/core#gql"
