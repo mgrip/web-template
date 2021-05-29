@@ -49,3 +49,4 @@ At a high level, this template is a React web app using a node Express web serve
 - [React Refresh webpack plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin)
 - [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
+- [Cypress](https://www.cypress.io)
