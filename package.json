@@ -53,6 +53,7 @@
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "concurrently": "^6.0.0",
+    "cypress": "^7.4.0",
     "eslint": "^7.23.0",
     "eslint-plugin-react": "^7.23.1",
     "nodemon": "^2.0.7",
@@ -65,6 +66,8 @@
     "dev": "NODE_ENV=development npx concurrently \"npx webpack --watch\" \"npx webpack serve --hot\" \"npx wait-on dist/server.js && npx nodemon dist/server.js\"",
     "codegen": "graphql-codegen --config codegen.yml",
     "build": "npx webpack && npx prisma generate && npx prisma migrate deploy",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "build:cypress": "NODE_ENV=test npx prisma generate && npx prisma migrate reset -f",
+    "start:cypress": "NODE_ENV=test npx concurrently \"npx webpack\" \"npx webpack serve --hot\" \"npx wait-on dist/server.js && node dist/server.js\""
   }
 }
