@@ -42,7 +42,7 @@
     "@graphql-codegen/typescript": "1.21.1",
     "@graphql-codegen/typescript-document-nodes": "1.17.10",
     "@graphql-codegen/typescript-operations": "1.17.15",
-    "@graphql-codegen/typescript-urql": "^2.0.5",
+    "@graphql-codegen/typescript-urql": "^3.6.4",
     "@graphql-codegen/urql-introspection": "^1.0.0",
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.37",
